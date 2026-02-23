@@ -1,4 +1,4 @@
-# 📄 README.md
+#  README.md
 
 # Username Variation Generator
 
@@ -6,7 +6,7 @@ A lightweight Python tool to generate common username formats used in AD, Linux,
 
 ---
 
-## ✨ Features
+##  Features
 
 * Accepts **First Last** and **First.Last** formats
 * Generates multiple username variations
@@ -15,7 +15,7 @@ A lightweight Python tool to generate common username formats used in AD, Linux,
 
 ---
 
-## 🚀 Usage
+##  Usage
 
 ### Basic
 
@@ -37,7 +37,7 @@ python3 gen_user.py -h
 
 ---
 
-## 📝 Input Examples
+##  Input Examples
 
 ```
 James Roberts
@@ -46,7 +46,7 @@ Sarah.Osvald
 
 ---
 
-## 📤 Output Examples
+##  Output Examples
 
 ```
 james.roberts
@@ -58,7 +58,7 @@ jr
 
 ---
 
-## 👤 Authors
+##  Authors
 
 PaiN05, Uday
 
