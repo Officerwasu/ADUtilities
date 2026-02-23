@@ -99,7 +99,7 @@ python3 /opt/winrmexec/evil_winrmexec.py -ssl -port 5986 paincorp.local/pain:'Pa
 
 
 
-## 🎥 Attack Flow
+##  Attack Flow
 
 1. **DNS Poisoning** - Injects malicious DNS record
 2. **Coercion Trigger** - Forces DC to authenticate to attacker
@@ -107,7 +107,7 @@ python3 /opt/winrmexec/evil_winrmexec.py -ssl -port 5986 paincorp.local/pain:'Pa
 4. **SYSTEM Shell** - Gains interactive SYSTEM shell on DC
 5. **Persistence** - Creates new domain admin user
 
-## 🛡️ Techniques Used
+##  Techniques Used
 
 - **DFSCoerce** - DFS namespace coercion
 - **PetitPotam** - EFS RPC coercion  
@@ -115,7 +115,7 @@ python3 /opt/winrmexec/evil_winrmexec.py -ssl -port 5986 paincorp.local/pain:'Pa
 - **DNS Admin Abuse** - DNS record modification
 - **WinRM Exploitation** - WinRM service compromise
 
-## 📊 Expected Output
+##  Expected Output
 
 When successful, you'll see:
 ```
@@ -124,7 +124,7 @@ When successful, you'll see:
 [!] Both processes are still running in the background
 ```
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -155,11 +155,11 @@ pkill -f 'ntlmrelayx'
 pkill -f 'nxc smb'
 ```
 
-## ⚠️ Legal Disclaimer
+##  Legal Disclaimer
 
 This tool is for educational and authorized penetration testing purposes only. The authors are not responsible for any misuse or damage caused by this tool. Always ensure you have proper authorization before testing.
 
-## 📝 Notes
+##  Notes
 
 - Requires DNS admin privileges or equivalent
 - Works best when attacker can create DNS records
@@ -167,7 +167,7 @@ This tool is for educational and authorized penetration testing purposes only. T
 - WinRM shells may be slow to respond initially
 - Always clean up created users after testing
 
-## 🎯 Success Indicators
+##  Success Indicators
 
 - `nt authority\system` in whoami output
 - Ability to read Administrator files
