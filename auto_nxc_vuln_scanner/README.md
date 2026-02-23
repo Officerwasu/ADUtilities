@@ -11,8 +11,8 @@ python3 auto_nxc.py -t 10.10.10.10 -u user -p pass -d domain.local  # Authentica
 
 ## Scanned Vulnerabilities
 
-- ✅ **Critical**: zerologon, printnightmare, ms17-010, smbghost, petitpotam, nopac, ntlm_reflection  
-- 🔍 **Info**: spooler (service detection)
+-  **Critical**: zerologon, printnightmare, ms17-010, smbghost, petitpotam, nopac, ntlm_reflection  
+-  **Info**: spooler (service detection)
 
 ## Output
 
