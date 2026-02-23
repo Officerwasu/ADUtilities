@@ -2,7 +2,7 @@
 
 A powerful automation tool for exploiting NTLM Reflection vulnerabilities to gain Domain Admin privileges on Windows domains.
 
-## 🚀 Features
+##  Features
 
 - **Automated DNS Record Injection** - Adds malicious DNS records for coercion
 - **NTLM Relay Attack** - Relays authentication to WinRM for SYSTEM shell
@@ -11,7 +11,7 @@ A powerful automation tool for exploiting NTLM Reflection vulnerabilities to gai
 - **Shell Detection** - Automatically detects when WinRM shell is ready
 - **Clean Interface** - Provides clear instructions for shell access
 
-## 📋 Prerequisites
+##  Prerequisites
 
 ### Required Tools
 ```bash
@@ -34,7 +34,7 @@ pipx install git+https://github.com/Pennyw0rth/NetExec
 - Network access to Domain Controller
 - Ability to create DNS records
 
-## 🛠️ Usage
+##  Usage
 
 ### Basic Syntax
 ```bash
@@ -62,7 +62,7 @@ For automatic connection when the shell is ready, use this while loop:
 while ! nc 127.0.0.1 11000 2>/dev/null; do sleep 1; done
 ```
 
-## 🎯 Proof of Concept
+##  Proof of Concept
 
 ### 1. Verify Shell Access
 ```cmd
