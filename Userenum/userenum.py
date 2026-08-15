@@ -1,20 +1,18 @@
 #!/usr/bin/env python3
 
-# Author : PaiN05 , Uday
+# Author : PaiN05 , Uday, Officerwasu
 import argparse
 
 def generate_variations(first, last, minimal=False):
     first = first.lower()
     last = last.lower()
     
-    
     if minimal:
         return list(set([
             f"{first}.{last}",
-            f"{first[0]}{last}"
+            f"{first[0]}.{last}"
         ]))
 
-    
     return list(set([
         f"{first}.{last}",
         f"{first}{last}",
@@ -34,7 +32,7 @@ def parse_name(line):
     if not line:
         return None
 
-    # Support First Last OR First.Last
+    
     if "." in line and " " not in line:
         parts = line.split(".")
     else:
@@ -49,7 +47,7 @@ def main():
     parser = argparse.ArgumentParser(description="Generate username variations.")
     parser.add_argument("-i", "--input", required=True, help="Input file with names")
     parser.add_argument("-o", "--output", default="users.txt", help="Output file for username variations")
-    parser.add_argument("-m", "--minimal", action="store_true", help="Generate minimal variations (first.last and flast only)")
+    parser.add_argument("-m", "--minimal", action="store_true", help="Generate minimal variations (first.last and f.last only)")
 
     args = parser.parse_args()
 
