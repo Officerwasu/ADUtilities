@@ -3,9 +3,18 @@
 # Author : PaiN05 , Uday
 import argparse
 
-def generate_variations(first, last):
+def generate_variations(first, last, minimal=False):
     first = first.lower()
     last = last.lower()
+    
+    
+    if minimal:
+        return list(set([
+            f"{first}.{last}",
+            f"{first[0]}{last}"
+        ]))
+
+    
     return list(set([
         f"{first}.{last}",
         f"{first}{last}",
@@ -40,6 +49,7 @@ def main():
     parser = argparse.ArgumentParser(description="Generate username variations.")
     parser.add_argument("-i", "--input", required=True, help="Input file with names")
     parser.add_argument("-o", "--output", default="users.txt", help="Output file for username variations")
+    parser.add_argument("-m", "--minimal", action="store_true", help="Generate minimal variations (first.last and flast only)")
 
     args = parser.parse_args()
 
@@ -59,7 +69,7 @@ def main():
         parsed = parse_name(line)
         if parsed:
             first, last = parsed
-            variations = generate_variations(first, last)
+            variations = generate_variations(first, last, minimal=args.minimal)
             usernames.update(variations)
         else:
             print(f"[!] Skipping invalid entry: {line.strip()}")
