@@ -22,6 +22,10 @@ A lightweight Python tool to generate common username formats used in AD, Linux,
 ```bash
 python3 gen_user.py -i names.txt
 ```
+### For Minimal lists
+```bash
+python3 gen_user.py -i names.txt -m
+````
 
 ### Specify output file
 
@@ -60,6 +64,6 @@ jr
 
 ##  Authors
 
-PaiN05, Uday
+PaiN05, Uday, Officerwasu
 
 ---
